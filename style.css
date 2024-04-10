@@ -1,0 +1,30 @@
+
+.my-container{
+    height: calc(100vh - 58.5px);
+    width: 100%;
+    display: flex;
+
+}
+.sidebar{
+    width: 140px;
+    height: 100%;
+    background-color: #051e34;
+    color: white;
+    background-image: url(./img/sidebar-bg.png);
+}
+
+.my-side-f{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    font-weight: 600;
+}
+
+.topbar{
+    width: 100%;
+    background-color: #1b72e8;
+    height: 140px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
