@@ -3,7 +3,6 @@
     height: calc(100vh - 58.5px);
     width: 100%;
     display: flex;
-
 }
 .sidebar{
     width: 140px;
@@ -20,11 +19,26 @@
     font-weight: 600;
 }
 
+.scrollable{
+    width: 100%;
+}
 .topbar{
     width: 100%;
     background-color: #1b72e8;
-    height: 140px;
+    height: 120px;
     color: white;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.my-pill-bg{
+    background-color: rgba(5, 30, 52, 0.3);
+}
+
+.my-inner-f{
+    display: flex;
+    flex-direction: column;
 }
