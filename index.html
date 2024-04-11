@@ -13,51 +13,41 @@
 
 <body>
   
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="./img/logo.svg" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">IMG</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">IMG</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">IMG</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    IMG
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-    </nav>
+  <nav class="navbar navbar-expand bg-body-tertiary px-3">
+    <a class="navbar-brand my-none-s" href="#">
+        <img class="" src="img/logo.svg" alt="">
+    </a>
+    <a class="navbar-brand my-none-l my-logo" href="#">
+      <img class="w-100" src="./img/mobile-logo.png" alt="">
+    </a>
+    <input class="form-control me-2 " type="search" placeholder="Prova a cercare Lezioni di Laravel" aria-label="Search">
+    <div class="d-flex gap-3">
+      <i class="fa-solid fa-list-ul ms-2 my-none-s"></i>
+      <i class="fa-solid fa-circle-question ms-2 my-none-s"></i>
+      <i class="fa-solid fa-ellipsis-vertical ms-2 my-none-s"></i>
+      <span class="nav-item dropdown ms-2">
+        <i class="nav-link dropdown-toggle fa-solid fa-bell" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #ff8c00;"></i>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </span>
+    </div>
+  </nav>
   <div class="my-container">
     <div class="sidebar my-side-f">
-        <div class="mb-3"><i class="fa-solid fa-house my-icons-wh me-2"></i>Home</div>
-        <div class="mb-3"><i class="fa-solid fa-chart-simple my-icons-wh me-2"></i>Stats</div>
-        <div><i class="fa-solid fa-signal my-icons-wh me-2"></i>Signals</div>
-        <div class="mt-auto"><i class="fa-solid fa-gear my-icons-wh me-2"></i>Admin</div>
+        <div class="mb-3"><i class="fa-solid fa-house my-icons-wh me-2"></i><span class="my-none-s">Home</span></div>
+        <div class="mb-3"><i class="fa-solid fa-chart-simple my-icons-wh me-2"></i><span class="my-none-s">Stats</span></div>
+        <div><i class="fa-solid fa-signal my-icons-wh me-2"></i><span class="my-none-s">Signals</span></div>
+        <div class="mt-auto"><i class="fa-solid fa-gear my-icons-wh me-2"></i><span class="my-none-s">Admin</span></div>
     </div>
 
     <div class="scrollable">
       <div class="topbar">
         <div class="my-inner-f h-100">
           <div><span class="fs-2 fw-semibold">Boolean</span><span class="badge rounded-pill my-pill-bg ms-2">Piano blaze</span></div>
-          <div><span class="badge rounded-pill my-pill-bg">Piano blaze</span><span class="fs-4">&raquo;</span><span class="badge rounded-pill my-pill-bg">Piano blaze</span><span class="badge rounded-pill my-pill-bg ms-2">Piano blaze</span><span class="badge rounded-pill my-pill-bg ms-2">Piano blaze</span></div>
+          <div><span class="badge rounded-pill my-pill-bg">Piano blaze</span><span class="fs-4">&raquo;</span><span class="badge rounded-pill my-pill-bg my-none-l">&plus;</span><span class="badge rounded-pill my-pill-bg my-none-s">Piano blaze</span><span class="badge rounded-pill my-pill-bg ms-2 my-none-s">Piano blaze</span><span class="badge rounded-pill my-pill-bg ms-2 my-none-s">Piano blaze</span></div>
         </div>
         <div class="h-100">
           <div>Studenti online negli ultimi 30 minuti</div>
@@ -67,12 +57,106 @@
       </div>
       
       <div class="row">
-        <div class="col-lg-8 p-4">
+        <div class="col-xl-8 col-lg-12 p-4">
           <div class="card mb-4">
             <div class="card-header fs-4 fw-semibold">
               Prossime Classi
             </div>
-            <div>Nome</div>
+            <div class="card-body">
+              <table class="table text-center">
+                <thead>
+                  <tr>
+                    <th class="my-text-initial my-tab-padding" scope="col">Nome</th>
+                    <th scope="col">Data inizio</th>
+                    <th scope="col">ROI</th>
+                    <th scope="col">Stato</th>
+                    <th scope="col text-center">Azioni</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="my-text-initial"><img src="./img/class-avatar.png" alt=""> Classe 75</td>
+                    <td>15 Feb 2021</td>
+                    <td>20%</td>
+                    <td><span class="badge rounded-pill my-pill-green ">done</span></td>
+                    <td>
+                      <button type="button" class="btn btn-outline-secondary my-fs-small"><i class="fa-solid fa-pencil"></i></button>
+                      <button type="button" class="btn btn-outline-secondary my-fs-small"><i class="fa-solid fa-trash"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="my-text-initial"><img src="./img/class-avatar.png" alt=""> Classe 75</td>
+                    <td>15 Feb 2021</td>
+                    <td>20%</td>
+                    <td><span class="badge rounded-pill my-pill-green ">done</span></td>
+                    <td>
+                      <button type="button" class="btn btn-outline-secondary my-fs-small"><i class="fa-solid fa-pencil"></i></button>
+                      <button type="button" class="btn btn-outline-secondary my-fs-small"><i class="fa-solid fa-trash"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="my-text-initial"><img src="./img/class-avatar.png" alt=""> Classe 75</td>
+                    <td>15 Feb 2021</td>
+                    <td>20%</td>
+                    <td><span class="badge rounded-pill my-pill-yellow ">process</span></td>
+                    <td>
+                      <button type="button" class="btn btn-outline-secondary my-fs-small"><i class="fa-solid fa-pencil"></i></button>
+                      <button type="button" class="btn btn-outline-secondary my-fs-small"><i class="fa-solid fa-trash"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="my-text-initial"><img src="./img/class-avatar.png" alt=""> Classe 75</td>
+                    <td>15 Feb 2021</td>
+                    <td>20%</td>
+                    <td><span class="badge rounded-pill my-pill-green ">done</span></td>
+                    <td>
+                      <button type="button" class="btn btn-outline-secondary my-fs-small"><i class="fa-solid fa-pencil"></i></button>
+                      <button type="button" class="btn btn-outline-secondary my-fs-small"><i class="fa-solid fa-trash"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="my-text-initial"><img src="./img/class-avatar.png" alt=""> Classe 75</td>
+                    <td>15 Feb 2021</td>
+                    <td>20%</td>
+                    <td><span class="badge rounded-pill my-pill-red ">failed</span></td>
+                    <td>
+                      <button type="button" class="btn btn-outline-secondary my-fs-small"><i class="fa-solid fa-pencil"></i></button>
+                      <button type="button" class="btn btn-outline-secondary my-fs-small"><i class="fa-solid fa-trash"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="my-text-initial"><img src="./img/class-avatar.png" alt=""> Classe 75</td>
+                    <td>15 Feb 2021</td>
+                    <td>20%</td>
+                    <td><span class="badge rounded-pill my-pill-green ">done</span></td>
+                    <td>
+                      <button type="button" class="btn btn-outline-secondary my-fs-small"><i class="fa-solid fa-pencil"></i></button>
+                      <button type="button" class="btn btn-outline-secondary my-fs-small"><i class="fa-solid fa-trash"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="my-text-initial"><img src="./img/class-avatar.png" alt=""> Classe 75</td>
+                    <td>15 Feb 2021</td>
+                    <td>20%</td>
+                    <td><span class="badge rounded-pill my-pill-red ">failed</span></td>
+                    <td>
+                      <button type="button" class="btn btn-outline-secondary my-fs-small"><i class="fa-solid fa-pencil"></i></button>
+                      <button type="button" class="btn btn-outline-secondary my-fs-small"><i class="fa-solid fa-trash"></i></button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="my-text-initial"><img src="./img/class-avatar.png" alt=""> Classe 75</td>
+                    <td>15 Feb 2021</td>
+                    <td>20%</td>
+                    <td><span class="badge rounded-pill my-pill-green ">done</span></td>
+                    <td>
+                      <button type="button" class="btn btn-outline-secondary my-fs-small"><i class="fa-solid fa-pencil"></i></button>
+                      <button type="button" class="btn btn-outline-secondary my-fs-small"><i class="fa-solid fa-trash"></i></button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
           <div class="card">
             <div class="card-header fs-4 fw-semibold">
@@ -120,7 +204,7 @@
           </div>
         </div>
 
-        <div class="col-lg-4 p-4">
+        <div class="col-xl-4 col-lg-12 p-4">
           <div class="card mb-4">
             <div class="card-header fs-4 fw-semibold">
               Todo
