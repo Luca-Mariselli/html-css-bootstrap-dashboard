@@ -14,17 +14,17 @@
 <body>
   
   <nav class="navbar navbar-expand bg-body-tertiary px-3">
-    <a class="navbar-brand my-none-s" href="#">
+    <a class="navbar-brand my-none-tablet" href="#">
         <img class="" src="img/logo.svg" alt="">
     </a>
-    <a class="navbar-brand my-none-l my-logo" href="#">
+    <a class="navbar-brand my-none-desk my-logo" href="#">
       <img class="w-100" src="./img/mobile-logo.png" alt="">
     </a>
     <input class="form-control me-2 " type="search" placeholder="Prova a cercare Lezioni di Laravel" aria-label="Search">
     <div class="d-flex gap-3">
-      <i class="fa-solid fa-list-ul ms-2 my-none-s"></i>
-      <i class="fa-solid fa-circle-question ms-2 my-none-s"></i>
-      <i class="fa-solid fa-ellipsis-vertical ms-2 my-none-s"></i>
+      <i class="fa-solid fa-list-ul ms-2 my-none-tablet"></i>
+      <i class="fa-solid fa-circle-question ms-2 my-none-tablet"></i>
+      <i class="fa-solid fa-ellipsis-vertical ms-2 my-none-tablet"></i>
       <span class="nav-item dropdown ms-2">
         <i class="nav-link dropdown-toggle fa-solid fa-bell" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: #ff8c00;"></i>
         <ul class="dropdown-menu dropdown-menu-end">
@@ -37,23 +37,111 @@
   </nav>
   <div class="my-container">
     <div class="sidebar my-side-f">
-        <div class="mb-3"><i class="fa-solid fa-house my-icons-wh me-2"></i><span class="my-none-s">Home</span></div>
-        <div class="mb-3"><i class="fa-solid fa-chart-simple my-icons-wh me-2"></i><span class="my-none-s">Stats</span></div>
-        <div><i class="fa-solid fa-signal my-icons-wh me-2"></i><span class="my-none-s">Signals</span></div>
-        <div class="mt-auto"><i class="fa-solid fa-gear my-icons-wh me-2"></i><span class="my-none-s">Admin</span></div>
+        <div class="mb-3 bg-image hover-overlay shadow-1-strong"><i class="fa-solid fa-house my-icons-wh me-2"></i><span class="my-none-tablet">Home</span></div>
+        <div class="mb-3 bg-image hover-overlay shadow-1-strong"><i class="fa-solid fa-chart-simple my-icons-wh me-2"></i><span class="my-none-tablet">Stats</span></div>
+        <div class="mb-3 bg-image hover-overlay shadow-1-strong"><i class="fa-solid fa-signal my-icons-wh me-2"></i><span class="my-none-tablet">Signals</span></div>
+        <div class="mt-auto bg-image hover-overlay shadow-1-strong"><i class="fa-solid fa-gear my-icons-wh me-2"></i><span class="my-none-tablet">Admin</span></div>
     </div>
 
     <div class="scrollable">
       <div class="topbar">
-        <div class="my-inner-f h-100">
+        <div class="my-inner-f h-100 mb-3" id="my-order-2">
           <div><span class="fs-2 fw-semibold">Boolean</span><span class="badge rounded-pill my-pill-bg ms-2">Piano blaze</span></div>
-          <div><span class="badge rounded-pill my-pill-bg">Piano blaze</span><span class="fs-4">&raquo;</span><span class="badge rounded-pill my-pill-bg my-none-l">&plus;</span><span class="badge rounded-pill my-pill-bg my-none-s">Piano blaze</span><span class="badge rounded-pill my-pill-bg ms-2 my-none-s">Piano blaze</span><span class="badge rounded-pill my-pill-bg ms-2 my-none-s">Piano blaze</span></div>
+          <div><span class="badge rounded-pill my-pill-bg">Piano blaze</span><span class="fs-4 mx-1">&raquo;</span><span class="badge rounded-pill my-pill-bg my-none-desk">&plus;</span><span class="badge rounded-pill my-pill-bg my-none-tablet">Piano blaze</span><span class="badge rounded-pill my-pill-bg ms-2 my-none-tablet">Piano blaze</span><span class="badge rounded-pill my-pill-bg ms-2 my-none-tablet">Piano blaze</span></div>
         </div>
-        <div class="h-100">
+        <div class="h-100 mb-3" id="my-order-3">
           <div>Studenti online negli ultimi 30 minuti</div>
           <div class="fs-2">125</div>
         </div>
-        <div class="me-5 h-100">Nuovo Studente IMG</div>
+        <div class="me-5 h-100" id="my-order-1">Nuovo Studente
+          <a class="btn btn-outline-light ms-4 px-2 pt-0 fs-5" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            &plus;
+          </a>
+          <div class="offcanvas offcanvas-end my-offcanvas-width" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci un nuovo studente</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <form class="my-offcanvas-f mb-2">
+                <div class="form-group w-50 p-2">
+                  <label for="exampleInputEmail1">Nome</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group w-50 p-2">
+                  <label for="exampleInputPassword1">Cognome</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+              </form>
+
+              <form class="my-offcanvas-f mb-2">
+                <div class="form-group w-50 p-2">
+                  <label for="exampleInputEmail1">Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group w-50 p-2">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+              </form>
+
+              <form class="my-offcanvas-f mb-2">
+                <div class="form-group w-50 p-2">
+                  <label for="exampleInputEmail1">Indirizzo Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group w-50 p-2">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+              </form>
+
+              <form class="my-offcanvas-f mb-2">
+                <div class="form-group w-100 p-2">
+                  <label for="exampleInputEmail1">Indirizzo</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+              </form>
+
+              <form class="my-offcanvas-f mb-2">
+                <div class="form-group w-50 p-2">
+                  <label for="exampleInputEmail1">Citta`</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="form-group my-w-30 p-2">
+                  <label for="exampleInputPassword1">Stato</label>
+                  <input type="button" class="form-control dropdown-toggle my-state-h"  placeholder="Scegli..."data-bs-toggle="dropdown" aria-expanded="false" id="exampleInputPassword1">
+                  <ul class="dropdown-menu">
+                    <li>A</li>
+                    <li>B</li>
+                    <li>C</li>
+                  </ul>
+                </div>
+                <div class="form-group w-20 p-2">
+                  <label for="exampleInputPassword1">CAP</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+              </form>
+
+              <form class="my-offcanvas-f mb-3">
+                <div class="form-group w-100 p-2">
+                  <label for="exampleInputEmail1">Foto</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+              </form>
+              <form class="mb-3">
+                <input type="checkbox" class="form-check-input mx-2" id="exampleCheck1">
+                <span>Seleziona per proseguire</span>
+              </form>
+
+              <form class="ms-2">
+                <button type="button" class="btn btn-primary">Salva</button>
+                <button type="button" class="btn btn-warning">Svuota</button>
+              </form>
+
+            </div>
+          </div>
+        </div>
       </div>
       
       <div class="row">
@@ -67,8 +155,8 @@
                 <thead>
                   <tr>
                     <th class="my-text-initial my-tab-padding" scope="col">Nome</th>
-                    <th scope="col">Data inizio</th>
-                    <th scope="col">ROI</th>
+                    <th class="my-none-mobile" scope="col">Data inizio</th>
+                    <th class="my-none-mobile" scope="col">ROI</th>
                     <th scope="col">Stato</th>
                     <th scope="col text-center">Azioni</th>
                   </tr>
@@ -76,8 +164,8 @@
                 <tbody>
                   <tr>
                     <td class="my-text-initial"><img src="./img/class-avatar.png" alt=""> Classe 75</td>
-                    <td>15 Feb 2021</td>
-                    <td>20%</td>
+                    <td class="my-none-mobile">15 Feb 2021</td>
+                    <td class="my-none-mobile">20%</td>
                     <td><span class="badge rounded-pill my-pill-green ">done</span></td>
                     <td>
                       <button type="button" class="btn btn-outline-secondary my-fs-small"><i class="fa-solid fa-pencil"></i></button>
@@ -86,8 +174,8 @@
                   </tr>
                   <tr>
                     <td class="my-text-initial"><img src="./img/class-avatar.png" alt=""> Classe 75</td>
-                    <td>15 Feb 2021</td>
-                    <td>20%</td>
+                    <td class="my-none-mobile">15 Feb 2021</td>
+                    <td class="my-none-mobile">20%</td>
                     <td><span class="badge rounded-pill my-pill-green ">done</span></td>
                     <td>
                       <button type="button" class="btn btn-outline-secondary my-fs-small"><i class="fa-solid fa-pencil"></i></button>
@@ -96,8 +184,8 @@
                   </tr>
                   <tr>
                     <td class="my-text-initial"><img src="./img/class-avatar.png" alt=""> Classe 75</td>
-                    <td>15 Feb 2021</td>
-                    <td>20%</td>
+                    <td class="my-none-mobile">15 Feb 2021</td>
+                    <td class="my-none-mobile">20%</td>
                     <td><span class="badge rounded-pill my-pill-yellow ">process</span></td>
                     <td>
                       <button type="button" class="btn btn-outline-secondary my-fs-small"><i class="fa-solid fa-pencil"></i></button>
@@ -106,8 +194,8 @@
                   </tr>
                   <tr>
                     <td class="my-text-initial"><img src="./img/class-avatar.png" alt=""> Classe 75</td>
-                    <td>15 Feb 2021</td>
-                    <td>20%</td>
+                    <td class="my-none-mobile">15 Feb 2021</td>
+                    <td class="my-none-mobile">20%</td>
                     <td><span class="badge rounded-pill my-pill-green ">done</span></td>
                     <td>
                       <button type="button" class="btn btn-outline-secondary my-fs-small"><i class="fa-solid fa-pencil"></i></button>
@@ -116,8 +204,8 @@
                   </tr>
                   <tr>
                     <td class="my-text-initial"><img src="./img/class-avatar.png" alt=""> Classe 75</td>
-                    <td>15 Feb 2021</td>
-                    <td>20%</td>
+                    <td class="my-none-mobile">15 Feb 2021</td>
+                    <td class="my-none-mobile">20%</td>
                     <td><span class="badge rounded-pill my-pill-red ">failed</span></td>
                     <td>
                       <button type="button" class="btn btn-outline-secondary my-fs-small"><i class="fa-solid fa-pencil"></i></button>
@@ -126,8 +214,8 @@
                   </tr>
                   <tr>
                     <td class="my-text-initial"><img src="./img/class-avatar.png" alt=""> Classe 75</td>
-                    <td>15 Feb 2021</td>
-                    <td>20%</td>
+                    <td class="my-none-mobile">15 Feb 2021</td>
+                    <td class="my-none-mobile">20%</td>
                     <td><span class="badge rounded-pill my-pill-green ">done</span></td>
                     <td>
                       <button type="button" class="btn btn-outline-secondary my-fs-small"><i class="fa-solid fa-pencil"></i></button>
@@ -136,8 +224,8 @@
                   </tr>
                   <tr>
                     <td class="my-text-initial"><img src="./img/class-avatar.png" alt=""> Classe 75</td>
-                    <td>15 Feb 2021</td>
-                    <td>20%</td>
+                    <td class="my-none-mobile">15 Feb 2021</td>
+                    <td class="my-none-mobile">20%</td>
                     <td><span class="badge rounded-pill my-pill-red ">failed</span></td>
                     <td>
                       <button type="button" class="btn btn-outline-secondary my-fs-small"><i class="fa-solid fa-pencil"></i></button>
@@ -146,8 +234,8 @@
                   </tr>
                   <tr>
                     <td class="my-text-initial"><img src="./img/class-avatar.png" alt=""> Classe 75</td>
-                    <td>15 Feb 2021</td>
-                    <td>20%</td>
+                    <td class="my-none-mobile">15 Feb 2021</td>
+                    <td class="my-none-mobile">20%</td>
                     <td><span class="badge rounded-pill my-pill-green ">done</span></td>
                     <td>
                       <button type="button" class="btn btn-outline-secondary my-fs-small"><i class="fa-solid fa-pencil"></i></button>
