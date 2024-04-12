@@ -39,6 +39,12 @@ html {
   font-weight: 600;
 }
 
+.sidebar > div:hover {
+  background-color: #b4b4b446;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
 /************** MAIN  **************/
 .scrollable {
   width: 100%;
@@ -120,12 +126,6 @@ html {
 
 .my-state-h {
   height: 38px;
-}
-
-.sidebar > div:hover {
-  background-color: #b4b4b446;
-  border-radius: 30px;
-  cursor: pointer;
 }
 
 /* MEDIA QUERIES */
